@@ -74,17 +74,3 @@ class BordaCatupiry(PizzaDecorator):
 
     def get_cost(self) -> float:
         return self.decorated_pizza.get_cost() + 4.25
-
-class BordaCheddar(PizzaDecorator):
-    def get_description(self) -> str:
-        return f"{self.decorated_pizza.get_description()}, Borda de Cheddar"
-
-    def get_cost(self) -> float:
-        return self.decorated_pizza.get_cost() + 4.25
-
-class BordaChocolate(PizzaDecorator):
-    def get_description(self) -> str:
-        return f"{self.decorated_pizza.get_description()}, Borda de Chocolate"
-
-    def get_cost(self) -> float:
-        return self.decorated_pizza.get_cost() + 6.25
